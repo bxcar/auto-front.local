@@ -1,0 +1,88 @@
+.header__container {
+  width: 1169px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__menu {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__menu-item {
+  margin-right: 22px;
+}
+
+.header__menu-item-link {
+  @include font('PT Sans', sans-serif, 20px, 24px, #3c3c3c, 400);
+  letter-spacing: .025em;
+  text-decoration: none;
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.header__logo {
+  width: 450px;
+}
+
+.header__logo-text {
+  @include font('PT Sans', sans-serif, 53px, inherit, #3c3c3c, 700);
+  letter-spacing: .025em;
+
+  &--1 {
+    color: #555555;
+  }
+
+  &--2 {
+    color: #082e55;
+  }
+}
+
+.header__phone-img {
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+.header__phone-number {
+  @include font('PT Sans', sans-serif, 38px, 30px, #082e55, 700);
+  letter-spacing: .025em;
+}
+
+.header__phone-number-sub {
+  @include font('PT Sans', sans-serif, 25px, 30px, #082e55, 400);
+}
+
+.header__callback {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.header__callback-button {
+  @include font('PT Sans', sans-serif, 20px, 24px, #fff, 400);
+  letter-spacing: .025em;
+  text-decoration: none;
+  background-color: #082e55;
+  padding: 10px 17px;
+}
+
+.header__order-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header__order-text {
+  @include font('PT Sans', sans-serif, 20px, 24px, #082e55, 700);
+  letter-spacing: .025em;
+  margin-left: 10px;
+}

@@ -73,7 +73,7 @@ gulp.task('img', function () {
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
     gulp.watch('app/sass/**/*.scss', ['sass']);
-    gulp.watch('app/sass/blocks/**/*.scss', ['sass']);
+    gulp.watch('app/sass/blocks/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     // gulp.watch('app/js/**/*.js');
