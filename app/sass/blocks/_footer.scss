@@ -1,0 +1,86 @@
+.footer {
+  margin-top: 50px;
+}
+
+.footer__top {
+  background-color: #345e80;
+}
+
+.footer__top-container {
+  width: 1169px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.footer__title {
+  @include font('PT Sans', sans-serif, 32px, 1.2em, #fff, 700);
+  letter-spacing: .025em;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.footer__phone-map-wrapper {
+  display: flex;
+}
+
+.footer__phone {
+  margin-right: 30px;
+}
+
+.footer__phone-img {
+  margin-right: 15px;
+  position: relative;
+  top: 12px;
+}
+
+.footer__phone-number {
+  @include font('PT Sans', sans-serif, 54px, 43px, #fff, 700);
+  letter-spacing: .025em;
+}
+
+.footer__phone-number-sub {
+  @include font('PT Sans', sans-serif, 36px, 43px, #fff, 400);
+}
+
+.footer__phone-small-text {
+  display: block;
+  @include font('PT Sans', sans-serif, 18px, 24px, #fff, 700);
+  letter-spacing: .025em;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.footer__location-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.footer__location-img {
+  margin-right: 15px;
+}
+
+.footer__address {
+  @include font('PT Sans', sans-serif, 24px, 26px, #fff, 700);
+  letter-spacing: .025em;
+}
+
+.footer__bottom {
+  background-color: #252525;
+}
+
+.footer__bottom-container {
+  width: 1169px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer__copyright {
+  @include font('PT Sans', sans-serif, 18px, 24px, #fff, 400);
+  letter-spacing: .025em;
+}
