@@ -54,6 +54,8 @@
 .main__right-side h2 {
   position: relative;
   padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
   @include font('PT Sans', sans-serif, 36px, 1.2em, #082e55, 700);
   letter-spacing: .025em;
 }

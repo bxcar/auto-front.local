@@ -25,8 +25,8 @@ gulp.task('sass', function () {
 
 gulp.task('scripts', function () {
     return gulp.src([
-        // 'app/libs/jquery/jquery-3.3.1.min.js',
-        // 'app/libs/owlcarousel/js/owl.carousel.min.js',
+        'app/libs/jquery/jquery-3.3.1.min.js',
+        'app/libs/owlcarousel/js/owl.carousel.min.js'
         // 'app/libs/owlcarousel/js/owl.carousel2.thumbs.min.js'
     ])
         .pipe(concat('libs.min.js'))
@@ -36,7 +36,7 @@ gulp.task('scripts', function () {
 
 gulp.task('css-libs', ['sass'], function () {
     return gulp.src([
-        // 'app/libs/owlcarousel/css/owl.carousel.min.css'
+        'app/libs/owlcarousel/css/owl.carousel.min.css'
     ])
         .pipe(concat('libs.min.css'))
         .pipe(cssnano())
@@ -81,9 +81,9 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
 
 gulp.task('build', ['img', 'sass', 'scripts'], function () {
     var buildCss = gulp.src([
-        'app/css/main.css'
-        // 'app/css/libs.min.css',
-        // 'app/css/owl.theme.default.css'
+        'app/css/main.css',
+        'app/css/libs.min.css',
+        'app/css/owl.theme.default.css'
     ])
         .pipe(gulp.dest('dist/css'));
 
