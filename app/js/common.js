@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $("#owl-slider").owlCarousel({
-        items: 4
+        items: 4,
+        nav: true,
+        navText : ["<img src='img/left-arrow.png'>","<img src='img/right-arrow.png'>"]
         // singleItem: true,
         // dots: true,
         // dotsContainer: '#carousel-custom-dots'

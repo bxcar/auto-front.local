@@ -24,6 +24,7 @@
 
 .slider__container {
   width: 1169px;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -54,4 +55,34 @@
   @include font('PT Sans', sans-serif, 20px, 24px, #000, 400);
   letter-spacing: .025em;
   text-align: justify;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 48%;
+  width: 100%;
+}
+
+.owl-nav button {
+  outline: none;
+}
+
+.owl-prev {
+  left: -100px;
+  position: absolute;
+}
+
+.owl-next {
+  right: -100px;
+  position: absolute;
+}
+
+@media (max-width: 1400px) {
+  .owl-prev {
+    left: -80px;
+  }
+
+  .owl-next {
+    right: -80px;
+  }
 }
