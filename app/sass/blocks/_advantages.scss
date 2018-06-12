@@ -1,0 +1,40 @@
+.advantages {
+  margin-top: 50px;
+}
+
+.advantages__container {
+  width: 1260px;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  border: 1px solid #acacac;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__img {
+  position: relative;
+  bottom: 20px;
+}
+
+.advantages__desc {
+  position: absolute;
+  top: 175px;
+  @include font('PT Sans', sans-serif, 20px, 24px, #000, 700);
+  letter-spacing: .025em;
+  text-align: center;
+}
+
+.advantages__checked {
+  position: absolute;
+  bottom: -15px;
+}
