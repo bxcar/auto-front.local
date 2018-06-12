@@ -41,4 +41,8 @@
   text-decoration: none;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  &--min {
+    @include font('PT Sans', sans-serif, 14px, 16px, #fff, 700);
+  }
 }
