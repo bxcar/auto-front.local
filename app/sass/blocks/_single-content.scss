@@ -1,0 +1,84 @@
+.single-content {
+  width: 839px;
+  box-sizing: border-box;
+}
+
+.single-content__breadcrumbs {
+  @include font('PT Sans', sans-serif, 18px,24px, #000, 400);
+  letter-spacing: .025em;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.single-content__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  @include font('PT Sans', sans-serif, 36px, 1.2em, #082e55, 700);
+  letter-spacing: .025em;
+}
+
+.single-content__top-block {
+  display: flex;
+}
+
+.single-content__main-img {
+  margin-right: 30px;
+}
+
+.single-content__form-title {
+  @include font('PT Sans', sans-serif, 24px, 1.2em, #082e55, 700);
+  letter-spacing: .025em;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.single-content__form-subtitle {
+  @include font('PT Sans', sans-serif, 18px, 1.2em, #7898b1, 700);
+  letter-spacing: .025em;
+  text-align: center;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.single-content__car-price-wrap {
+  @include font('PT Sans', sans-serif, 20px, 30px, #000000, 400);
+  letter-spacing: .025em;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.single-content__car-price {
+  color: #082e55;
+  font-weight: bold;
+}
+
+.single-content__form-input {
+  height: 53px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  outline: none;
+  @include font('PT Sans', sans-serif, 16px, 1.2em, #898989, 400);
+
+  &--tel {
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+.single-content__form-submit {
+  height: 53px;
+  @include font('PT Sans', sans-serif, 22px, 24px, #ffffff, 400);
+  letter-spacing: .025em;
+  border: none;
+  width: 100%;
+  outline: none;
+  background-color: #5078a0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
