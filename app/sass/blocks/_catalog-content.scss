@@ -1,0 +1,19 @@
+.catalog-content {
+  width: 839px;
+  box-sizing: border-box;
+}
+
+.catalog-content__breadcrumbs {
+  @include font('PT Sans', sans-serif, 18px,24px, #000, 400);
+  letter-spacing: .025em;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.catalog-content__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  @include font('PT Sans', sans-serif, 36px, 1.2em, #082e55, 700);
+  letter-spacing: .025em;
+  text-transform: uppercase;
+}
