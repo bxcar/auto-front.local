@@ -22,6 +22,11 @@
   margin-bottom: 20px;
 }
 
+.single-content__main-img-wrap {
+  width: 541px;
+  margin-right: 30px;
+}
+
 .single-content__main-img {
   margin-right: 30px;
 }
@@ -88,6 +93,29 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 23px;
+}
+
+.single-content__subimg {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.active {
+    &:before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 6px solid #2d5ad8;
+    }
+  }
+}
+
+.single-content__subimg-img {
+  width: 196px;
 }
 
 .single-content__subtitle {

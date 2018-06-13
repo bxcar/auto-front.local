@@ -8,6 +8,13 @@ $(document).ready(function () {
         // dotsContainer: '#carousel-custom-dots'
     });
 
+    $('#owl-slider-thumbs').owlCarousel({
+        items: 1,
+        singleItem: true,
+        thumbs: true,
+        thumbsPrerendered: true
+    });
+
     /*$("#owl-slider-v2").owlCarousel({
         items: 1,
         singleItem: true,
