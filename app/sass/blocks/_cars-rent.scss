@@ -45,4 +45,8 @@
   &--min {
     @include font('PT Sans', sans-serif, 14px, 16px, #fff, 700);
   }
+
+  &:hover {
+    //background-color: #5077a0;
+  }
 }
