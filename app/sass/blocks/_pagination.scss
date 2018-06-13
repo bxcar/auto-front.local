@@ -1,0 +1,22 @@
+.pagination {
+  text-align: center;
+  @include font('PT Sans', sans-serif, 18px, 1.2em, #082e55, 700);
+  letter-spacing: .025em;
+}
+
+.pagination__current,
+.pagination__inactive,
+.pagination__forward,
+.pagination__show-all {
+  text-decoration: none;
+}
+
+.pagination__inactive,
+.pagination__separator,
+.pagination__show-all{
+  color: #919aa3;
+}
+
+.pagination__forward {
+  color: #5078a0;
+}
