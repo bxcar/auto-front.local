@@ -197,4 +197,21 @@
   .header__container {
     width: 100%;
   }
+
+  .header__bottom {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    width: auto;
+    margin-bottom: 8px;
+  }
+
+  .header__phone {
+    margin-bottom: 15px;
+  }
+
+  .header__callback-button {
+    display: block;
+  }
 }

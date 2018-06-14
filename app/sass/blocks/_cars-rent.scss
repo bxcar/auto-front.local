@@ -49,4 +49,50 @@
   &:hover {
     //background-color: #5077a0;
   }
+
+  &--mob {
+    display: none;
+  }
+}
+
+@media (max-width: 1350px) {
+  .cars-rent__container {
+    width: 100%;
+  }
+
+  .cars-rent__block {
+    margin-bottom: 0;
+  }
+
+  .cars-rent__images {
+    flex-direction: column;
+  }
+
+  .cars-rent__text-link {
+    display: none;
+
+    &--mob {
+      display: block;
+      background-color: #5078a0;
+      text-align: center;
+      width: 100%;
+      max-width: 320px;
+      align-self: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 20px;
+    }
+  }
+
+  .cars-rent__img {
+    align-self: center;
+    max-width: 227px;
+  }
+
+  .cars-rent__img-link {
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+    height: 240px;
+  }
 }

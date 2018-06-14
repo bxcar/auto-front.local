@@ -42,3 +42,38 @@
   position: absolute;
   bottom: -15px;
 }
+
+
+@media (max-width: 1350px) {
+  .advantages__container {
+    flex-direction: column;
+    padding-top: 15px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .advantages__item {
+    flex-direction: column;
+    height: 180px;
+  }
+
+  .advantages__img {
+    position: static;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .advantages__desc {
+    position: static;
+    top: 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .advantages__checked {
+    &--desktop {
+      display: none;
+    }
+  }
+}
