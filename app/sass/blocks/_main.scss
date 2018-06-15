@@ -79,3 +79,35 @@
   margin-top: 12px;
   margin-bottom: 12px;
 }
+
+@media (max-width: 1350px) {
+  .main__left-side {
+    display: none;
+  }
+
+  .main__container {
+    width: 100%;
+    max-width: 839px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    //max-width: 320px;
+  }
+
+  .main__right-side {
+    width: 100%;
+  }
+
+  .main__right-side h2 {
+    font-size: 22px;
+  }
+
+  .main__right-side p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main__right-side img {
+    width: 100%;
+  }
+}

@@ -86,3 +86,25 @@
     right: -80px;
   }
 }
+
+@media (max-width: 1350px) {
+  .slider__container {
+    width: 320px;
+  }
+
+  .owl-prev {
+    left: -10px;
+  }
+
+  .owl-prev img {
+    width: 40px;
+  }
+
+  .owl-next {
+    right: -10px;
+  }
+
+  .owl-next img {
+    width: 40px;
+  }
+}

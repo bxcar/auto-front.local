@@ -84,3 +84,59 @@
   @include font('PT Sans', sans-serif, 18px, 24px, #fff, 400);
   letter-spacing: .025em;
 }
+
+@media (max-width: 1350px) {
+  .footer__top-container {
+    width: 100%;
+    //padding-left: 7px;
+    //padding-right: 7px;
+    box-sizing: border-box;
+  }
+
+  .footer__title {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .footer__phone-map-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__phone {
+    margin-right: 0;
+  }
+
+  .footer__phone-number {
+    font-size: 43px;
+  }
+
+  .footer__phone-number-sub {
+    font-size: 28px;
+  }
+
+  .footer__phone-small-text {
+    font-size: 14px;
+  }
+
+  .footer__address {
+    font-size: 18px;
+  }
+
+  .footer__phone-img,
+  .footer__location-img {
+    width: 27px;
+  }
+
+  .footer__bottom-container {
+    width: 100%;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+}

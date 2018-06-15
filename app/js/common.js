@@ -1,8 +1,21 @@
 $(document).ready(function () {
     $("#owl-slider").owlCarousel({
-        items: 4,
+        items: 1,
         nav: true,
-        navText: ["<img src='img/left-arrow.png'>", "<img src='img/right-arrow.png'>"]
+        navText: ["<img src='img/left-arrow.png'>", "<img src='img/right-arrow.png'>"],
+        responsive: {
+            // breakpoint from 0 up
+            0: {},
+            // breakpoint from 480 up
+            480: {},
+            // breakpoint from 768 up
+            1350: {
+                items: 4,
+                nav: true,
+                navText: ["<img src='img/left-arrow.png'>", "<img src='img/right-arrow.png'>"]
+            }
+        }
+
         // singleItem: true,
         // dots: true,
         // dotsContainer: '#carousel-custom-dots'
@@ -19,7 +32,7 @@ $(document).ready(function () {
         $('.header__burger-wrapper').removeClass('active');
     }
 
-    $('#check-menu').on('click',function () {
+    $('#check-menu').on('click', function () {
         if ($(this).is(':checked')) {
             $('.header__burger-wrapper').addClass('active');
             console.log('checkd');
