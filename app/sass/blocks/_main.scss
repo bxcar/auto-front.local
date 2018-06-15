@@ -81,6 +81,12 @@
 }
 
 @media (max-width: 1350px) {
+  .main {
+    &--content {
+      margin-top: 0;
+    }
+  }
+
   .main__left-side {
     display: none;
   }

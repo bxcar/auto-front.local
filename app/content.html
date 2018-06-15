@@ -42,6 +42,34 @@
                 <a class="header__menu-item-link" href="#">Вопросы и ответы</a>
             </li>
         </ul>
+        <div class="header__search-burger-wrapper">
+            <div class="header__burger-wrapper">
+                <input type="checkbox" class="header__burger-check-menu" id="check-menu">
+                <label class="header__burger-check-menu-label" for="check-menu"></label>
+                <div class="header__burger-line header__burger-first"></div>
+                <div class="header__burger-line header__burger-second"></div>
+                <div class="header__burger-line header__burger-third"></div>
+                <div class="header__burger-line header__burger-fourth"></div>
+                <nav class="header__burger-main-menu">
+                    <a class="header__burger-link" href="#">Пункт 1</a>
+                    <a class="header__burger-link" href="#">Пункт 2</a>
+                    <a class="header__burger-link" href="#">Пункт 3</a>
+                    <a class="header__burger-link" href="#">Пункт 4</a>
+                    <a class="header__burger-link" href="#">Пункт 5</a>
+                </nav>
+            </div>
+            <div class="header__search">
+                <button id="search-form-submit-unreal" class="header__search-form-submit">
+                    <img class="header__search-img" src="img/search.png">
+                </button>
+                <form id="header-search-form" class="header__search-form" action="/" method="get">
+                    <input class="header__search-input" name="s" id="s" type="text" placeholder="Поиск">
+                    <button type="submit" class="header__search-form-submit">
+                        <img class="header__search-form-submit-img" src="img/search.png">
+                    </button>
+                </form>
+            </div>
+        </div>
         <div class="header__bottom">
             <div class="header__logo">
                 <span class="header__logo-text header__logo-text--1">AVTO</span><!--
@@ -70,21 +98,27 @@
             <div class="cars-rent__images">
                 <a class="cars-rent__img-link" href="#">
                     <img class="cars-rent__img" src="img/minivan-min-rent.png">
+                    <span class="cars-rent__text-link cars-rent__text-link--mob">Аренда Минивэна</span>
                 </a>
                 <a class="cars-rent__img-link" href="#">
                     <img class="cars-rent__img" src="img/minibus-min-rent.png">
+                    <span class="cars-rent__text-link cars-rent__text-link--mob">Аренда Микроавтобуса</span>
                 </a>
                 <a class="cars-rent__img-link" href="#">
                     <img class="cars-rent__img" src="img/car-min-rent.png">
+                    <span class="cars-rent__text-link cars-rent__text-link--mob">Аренда Автомобиля</span>
                 </a>
                 <a class="cars-rent__img-link" href="#">
                     <img class="cars-rent__img" src="img/premium-min-rent.png">
+                    <span class="cars-rent__text-link cars-rent__text-link--mob">Аренда Премиум класс</span>
                 </a>
                 <a class="cars-rent__img-link" href="#">
                     <img class="cars-rent__img" src="img/suv-min-rent.png">
+                    <span class="cars-rent__text-link cars-rent__text-link--mob">Аренда Внедорожника</span>
                 </a>
                 <a class="cars-rent__img-link" href="#">
                     <img class="cars-rent__img" src="img/bus-min-rent.png">
+                    <span class="cars-rent__text-link cars-rent__text-link--mob">Аренда Автобуса</span>
                 </a>
             </div>
             <div class="cars-rent__titles">
@@ -99,7 +133,7 @@
     </div>
 </div>
 
-<main class="main">
+<main class="main main--content">
     <div class="main__container">
         <div class="main__left-side">
             <div class="main__left-side-title">Наши услуги</div>
@@ -244,6 +278,16 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer__form-wrap">
+        <span class="footer__form-title">Не нашил, что искали?</span>
+        <span class="footer__form-subtitle">Оставьте заявку и мы перезвоним вам через 30 секунд</span>
+        <form class="footer__form" action="/" method="post">
+            <input class="footer__form-input" type="text" name="name" placeholder="Ваше имя">
+            <input class="footer__form-input footer__form-input--tel" type="tel" name="phone" placeholder="Ваш телефон">
+            <input class="footer__form-submit" type="submit" value="Заказать">
+        </form>
+        <span class="footer__form-small-text">* Я даю согласие на обработку моих персональных данных</span>
     </div>
     <div class="footer__bottom">
         <div class="footer__bottom-container">
