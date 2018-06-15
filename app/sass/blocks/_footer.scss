@@ -85,6 +85,10 @@
   letter-spacing: .025em;
 }
 
+.footer__form-wrap {
+  display: none;
+}
+
 @media (max-width: 1350px) {
   .footer__top-container {
     width: 100%;
@@ -138,5 +142,76 @@
     padding-left: 5px;
     padding-right: 5px;
     box-sizing: border-box;
+  }
+
+  .footer__form-wrap {
+    display: block;
+  }
+
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__form-title {
+    @include font('PT Sans', sans-serif, 30px, 1.2em, #082e55, 700);
+    letter-spacing: .025em;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+
+  .footer__form-subtitle {
+    @include font('PT Sans', sans-serif, 24px, 1em, #484848, 700);
+    letter-spacing: .025em;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .footer__form-input {
+    height: 53px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    max-width: 270px;
+    outline: none;
+    @include font('PT Sans', sans-serif, 16px, 1.2em, #898989, 400);
+
+    &--tel {
+      margin-top: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer__form-submit {
+    height: 53px;
+    @include font('PT Sans', sans-serif, 22px, 24px, #ffffff, 400);
+    letter-spacing: .025em;
+    border: none;
+    width: 100%;
+    max-width: 270px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #5078a0;
+    margin-bottom: 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .footer__form-small-text {
+    @include font('PT Sans', sans-serif, 14px, 1.2em, #898989, 400);
+    letter-spacing: .025em;
+    max-width: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
   }
 }
