@@ -33,11 +33,18 @@ $(document).ready(function () {
     }
 
     $('#check-menu').on('click', function () {
+        $("#header-search-form").css("display", "none");
+        $('#search-form-submit-unreal').css("display", "block");
         if ($(this).is(':checked')) {
             $('.header__burger-wrapper').addClass('active');
             console.log('checkd');
         } else {
             setTimeout(active_burger, 500);
         }
+    });
+
+    $( "#search-form-submit-unreal" ).click(function() {
+        $(this).css("display", "none");
+        $("#header-search-form").css("display", "flex");
     });
 });

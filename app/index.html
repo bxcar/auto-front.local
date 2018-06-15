@@ -42,20 +42,33 @@
                 <a class="header__menu-item-link" href="#">Вопросы и ответы</a>
             </li>
         </ul>
-        <div class="header__burger-wrapper">
-            <input type="checkbox" class="header__burger-check-menu" id="check-menu">
-            <label class="header__burger-check-menu-label" for="check-menu"></label>
-            <div class="header__burger-line header__burger-first"></div>
-            <div class="header__burger-line header__burger-second"></div>
-            <div class="header__burger-line header__burger-third"></div>
-            <div class="header__burger-line header__burger-fourth"></div>
-            <nav class="header__burger-main-menu">
-                <a class="header__burger-link" href="#">Пункт 1</a>
-                <a class="header__burger-link" href="#">Пункт 2</a>
-                <a class="header__burger-link" href="#">Пункт 3</a>
-                <a class="header__burger-link" href="#">Пункт 4</a>
-                <a class="header__burger-link" href="#">Пункт 5</a>
-            </nav>
+        <div class="header__search-burger-wrapper">
+            <div class="header__burger-wrapper">
+                <input type="checkbox" class="header__burger-check-menu" id="check-menu">
+                <label class="header__burger-check-menu-label" for="check-menu"></label>
+                <div class="header__burger-line header__burger-first"></div>
+                <div class="header__burger-line header__burger-second"></div>
+                <div class="header__burger-line header__burger-third"></div>
+                <div class="header__burger-line header__burger-fourth"></div>
+                <nav class="header__burger-main-menu">
+                    <a class="header__burger-link" href="#">Пункт 1</a>
+                    <a class="header__burger-link" href="#">Пункт 2</a>
+                    <a class="header__burger-link" href="#">Пункт 3</a>
+                    <a class="header__burger-link" href="#">Пункт 4</a>
+                    <a class="header__burger-link" href="#">Пункт 5</a>
+                </nav>
+            </div>
+            <div class="header__search">
+                <button id="search-form-submit-unreal" class="header__search-form-submit">
+                    <img class="header__search-img" src="img/search.png">
+                </button>
+                <form id="header-search-form" class="header__search-form" action="/" method="get">
+                    <input class="header__search-input" name="s" id="s" type="text" placeholder="Поиск">
+                    <button type="submit" class="header__search-form-submit">
+                        <img class="header__search-form-submit-img" src="img/search.png">
+                    </button>
+                </form>
+            </div>
         </div>
         <div class="header__bottom">
             <div class="header__logo">
