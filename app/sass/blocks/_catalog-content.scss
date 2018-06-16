@@ -138,4 +138,11 @@
   .catalog-content__title {
     text-align: center;
   }
+
+  .catalog-content__title {
+    &--search {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
